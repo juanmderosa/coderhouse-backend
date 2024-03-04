@@ -6,8 +6,8 @@ const productManager = new ProductManager();
 const app = express();
 //Middlewares
 app.use(express.urlencoded({ extended: true }));
-/* app.use(express.json());
- */
+app.use(express.json());
+
 //Listen
 app.listen(port, () => {
   console.log(`servidor corriendo en el puerto ${port}`);

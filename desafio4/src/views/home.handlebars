@@ -1,0 +1,15 @@
+<div>
+    <h1 style="text-align: center;">Products</h1>
+<ul>
+        {{#each productos}}
+            <li style="list-style: none; margin-bottom: 10px; border: 1px solid; padding: 1rem">
+                <h2>{{title}}</h2>
+                <p>{{price}}</p>
+                <p>{{description}}</p>
+
+            </li>
+        {{/each}}
+    </ul>
+</div>
+
+<script src="/js/home.js"></script>
